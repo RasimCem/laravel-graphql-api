@@ -1,0 +1,4 @@
+extend type Query {
+    tickets: [Ticket!] @paginate
+    ticket(id: ID! @eq): Ticket @find
+}

@@ -1,0 +1,3 @@
+extend type Mutation {
+    createTicket(title: String! @rules(apply: ["min:3"]), description: String! @rules(apply: ["min:20"]), file: Upload @rules(apply: ["image", "mimes:png,jpg,jpeg"])): Ticket
+}

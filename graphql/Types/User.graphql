@@ -1,0 +1,9 @@
+type User{
+    id: ID!
+    name: String!
+    surname: String!
+    email: String!
+    tickets: [Ticket!]! @hasMany
+    created_at: DateTime!
+    updated_at: DateTime!
+}
